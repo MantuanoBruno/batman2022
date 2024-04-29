@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0;  
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style-image: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+li:hover {
+    color: #d21617;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+body {
+    background: linear-gradient(-60deg, black, #d21617);
+}
+
+.container  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.form_box   {
+    display: flex;
+    flex-direction: column;
+    background-color: #163040;
+    border-radius: 8px;
+    width: 700px;
+}
+
+.form_box .title{
+    padding: 24px 32px;
+    font-size: 24px;
+    border-bottom: thin solid #ccc;
+}
+
+.form_box form {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+
+.form_box input,
+.form_box textarea {
+    width: calc(50% - 26px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #163040;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.form_box input:first-child {
+    margin-right: 16px;
+}
+
+.form_box input[name=subject]{
+    width: 100%;
+}
+
+.form_box textarea{
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+}
+
+.form_box button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;   
+    height: 48px;
+    border-radius: 8px;
+    background-color: #0E1F27;
+    color: aliceblue;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.form_box button:hover {
+    background-color: #d21617;
+    color: aliceblue;
+}
+
+footer {
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.footer-navigation {
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+span {
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+@media(max-width: 768px){
+    .footer-navigation{
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .container {
+        width: 95%;
+        height: 80vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form_box {
+        width: 425px;
+        
+    }
+    .form_box input:first-child {
+        margin-right: 0;
+    }
+
+    .form_box input {
+        width: 100%;
+    }
+
+}
+
+
