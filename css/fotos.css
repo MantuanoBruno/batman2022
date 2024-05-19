@@ -10,11 +10,6 @@
          
 }  
 
-@font-face {
-    font-family: brush;
-    src: url(../assets/brush-tip-c/BTCTRIAL.ttf);
-}
-
 header {
     height: 90px;
     display: flex;
@@ -51,7 +46,6 @@ li:hover {
 }
 
 div.Titulo {
-    font-family: brush;
     height: 100px;
     display: flex;
     justify-content: center;
